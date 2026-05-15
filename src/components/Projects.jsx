@@ -93,25 +93,33 @@ export default function Projects() {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="flex gap-3">
-                    <motion.a
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      href="#"
-                      className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.08] hover:border-indigo-500/30 transition-all"
-                    >
-                      <Github size={14} />
-                      GitHub
-                    </motion.a>
-                    <motion.a
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      href="#"
-                      className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-400 border border-indigo-500/20 hover:border-indigo-500/40 transition-all"
-                    >
-                      <ExternalLink size={14} />
-                      Live Demo
-                    </motion.a>
+                  <div className="flex gap-3 mt-auto">
+                    {project.github && (
+                      <motion.a
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.08] hover:border-indigo-500/30 transition-all"
+                      >
+                        <Github size={14} />
+                        GitHub
+                      </motion.a>
+                    )}
+                    {project.demo && (
+                      <motion.a
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-400 border border-indigo-500/20 hover:border-indigo-500/40 transition-all"
+                      >
+                        <ExternalLink size={14} />
+                        Live Demo
+                      </motion.a>
+                    )}
                   </div>
                 </div>
               </motion.div>

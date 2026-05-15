@@ -117,6 +117,7 @@ export const projectsData = [
     tags: ['BERT', 'RoBERTa', 'Python', 'NLP', 'Transformers'],
     icon: Brain,
     color: 'from-indigo-500 to-purple-600',
+    github: 'https://github.com/sandaru-abhishek-dev/sentiment-analysis-and-sarcasm-identifying',
   },
   {
     id: 2,
@@ -126,9 +127,20 @@ export const projectsData = [
     tags: ['CNN', 'TensorFlow', 'Keras', 'Computer Vision'],
     icon: Leaf,
     color: 'from-emerald-500 to-teal-600',
+    github: 'https://github.com/sandaru-abhishek-dev/corn-leaf-disease-identifying-model',
   },
   {
     id: 3,
+    title: 'Anime Recommendation Website',
+    description:
+      'A dynamic web page for recommending anime series to users based on genres and popularity, featuring a modern responsive user interface.',
+    tags: ['Web Development', 'Anime', 'HTML', 'CSS', 'JavaScript'],
+    icon: Code2,
+    color: 'from-pink-500 to-rose-600',
+    github: 'https://github.com/sandaru-abhishek-dev/webpage',
+  },
+  {
+    id: 4,
     title: 'Train Ticketing System',
     description:
       'Developed a Flask-based web application with SQLAlchemy/MySQL database integration and RESTful routes. Implemented secure authentication and Jinja2 front-end templates for full-featured ticket booking management.',
@@ -137,7 +149,7 @@ export const projectsData = [
     color: 'from-blue-500 to-cyan-600',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Modified Logistic Growth Model',
     description:
       'Mathematics research: Developed a modified logistic growth model to predict the impact of habitat loss on Asian elephant populations in Sri Lanka.',
@@ -229,6 +241,6 @@ export const contactData = {
   location: 'Tangalle, Sri Lanka',
   email: 'sandaruabhishek32@gmail.com',
   phone: '+94 78 558 0211',
-  github: 'https://github.com/yourusername', // Update with actual GitHub if available
+  github: 'https://github.com/sandaru-abhishek-dev',
   linkedin: 'https://www.linkedin.com/in/sandaru-abhishek-8698652a5/',
 }
